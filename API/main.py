@@ -1,4 +1,7 @@
 from fastapi import FastAPI
+from search import Search
+
+# from pydantic import BaseModel
 
 app = FastAPI()
 
@@ -8,10 +11,6 @@ def root():
     return {"Hello": "Worlds"}
 
 
-@app.get("/search")
-def search():
-    return {"search": "result as json"}
-
-    # get the push request
-    # search the csv file
-    # return the result as json
+@app.put("/search/{query}")
+def search(query : str):
+    return Search.result(query)

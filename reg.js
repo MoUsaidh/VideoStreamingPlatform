@@ -5,9 +5,9 @@ const password = document.querySelector('#password');
 const cpassword = document.querySelector('#cpassword');
 
 form.addEventListener('submit',(e)=>{
-    
-    if(!validateInputs()){
-        e.preventDefault();
+    e.preventDefault();
+    if(validateInputs()){
+        window.location.href = 'login.html';
     }
 })
 
@@ -42,10 +42,10 @@ function validateInputs(){
         success= false;
         setError(password,'Password is required')
     }
-    else if(passwordVal.length<8){
+    /*else if(passwordVal.length<8){
         success = false;
         setError(password,'Password must be atleast 8 characters long')
-    }
+    }*/
     else{
         setSuccess(password)
     }

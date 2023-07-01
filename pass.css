@@ -54,7 +54,7 @@ p{
     font-size: 14px;
     margin: 10px 0;
     display: inline-block;
-    color: rgba(16,27,55, 0.901);
+    color: #c38ef8;
 }
   input[type="button"]:hover {
     background-image: linear-gradient(to left, #f207b3,#c823d2,#7332d1,#5028bd);
@@ -77,7 +77,7 @@ p{
     outline: none;
     font-size: 1em;
     padding: 0 35px 0 5px;
-    color: black;
+    color: #e213bf;
     background: transparent;
     border: none;
 }

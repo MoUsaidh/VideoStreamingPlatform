@@ -1,7 +1,9 @@
 * {
   margin: 0;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: "Roboto", sans-serif;
   background-color: #27273f;
@@ -95,6 +97,44 @@ body {
   height: 50px;
   transition: 0.8s;
   cursor: pointer;
+}
+.dropdown {
+  position: absolute;
+  top: 100%;
+  right:5px;
+  display: none;
+  background-color: #27273f;
+  border: 1px solid #c38ef8;
+  border-radius: 4px;
+  padding: 8px;
+  width: 125px;
+}
+
+.dropdown ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.dropdown li {
+  margin-bottom: 8px;
+}
+
+.dropdown a {
+  display: flex;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+}
+.dropdown a:hover{
+  color:#f208b5;
+}
+.dropdown a i {
+  margin-right: 8px;
+  color: #f208b5;
+}
+.profile-container:active .dropdown {
+  display: block;
 }
 .container {
   background-color: #27273f;
@@ -253,11 +293,6 @@ h1{
   opacity: 0.8;
   cursor: pointer;
 }
-
-.container.active {
-  background-color: white;
-}
-
 .movie-list-title.active {
   color: black;
 }
@@ -369,7 +404,7 @@ footer {
 .footer-distributed .footer-center i {
   background-color: #a738dc;
   color: #ffffff;
-  font-size: 25px;
+  font-size: 15px;
   width: 38px;
   height: 38px;
   border-radius: 50%;

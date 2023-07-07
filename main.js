@@ -19,20 +19,6 @@ arrows.forEach((arrow, i) => {
 
   console.log(Math.floor(window.innerWidth / 270));
 });
-
-//TOGGLE
-
-const ball = document.querySelector(".toggle-ball");
-const items = document.querySelectorAll(
-  ".container,.movie-list-title,.navbar-container,.sidebar,.left-menu-icon,.toggle"
-);
-
-ball.addEventListener("click", () => {
-  items.forEach((item) => {
-    item.classList.toggle("active");
-  });
-  ball.classList.toggle("active");
-});
 function addToMyList() {
   var button = document.getElementById("addButton");
   var icon = document.getElementById("icon");
@@ -79,3 +65,11 @@ function toggleAddToList(button) {
     icon.classList.add("fa-plus");
   }
 }
+document.querySelector('.profile-picture').addEventListener('click', function() {
+  var dropdown = document.querySelector('.dropdown');
+  if (dropdown.style.display === 'block') {
+    dropdown.style.display = 'none';
+  } else {
+    dropdown.style.display = 'block';
+  }
+});

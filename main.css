@@ -64,7 +64,6 @@ body {
   font-size: 20px;
   transition: 0.8s;
   position: relative;
-  border-bottom: 3px solid #c38ef8;
   padding-bottom: 2px;
 }
 .profile-container {
@@ -306,27 +305,6 @@ h1{
     .menu-container{
         display: none;
     }
-}
-.add-to-list {
-  background-color: #8b3ce5;
-  color: white;
-  padding: 10px 20px;
-  border-radius: 10px;
-  border: none;
-  outline: none;
-  font-weight: bold;
-  margin-left: 10px;
-  transition: 1s all ease-in-out;
-}
-.add-to-list:hover{
-  background-color: #4f28be;
-  cursor: pointer;
-}
-.add-to-list i {
-  margin-left: 10px;
-}
-.add-to-list.added {
-  background-color: #e114c4;
 }
 footer {
   position: fixed;
